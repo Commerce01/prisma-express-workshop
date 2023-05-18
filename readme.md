@@ -1,0 +1,1 @@
+ทดสอบ ทำ typescript กับ prisma
