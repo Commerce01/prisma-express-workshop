@@ -17,8 +17,8 @@ postController.get("/", async (req: Request, res: Response) => {
 });
 
 postController.get("/:id", async (req: Request<IPost>, res: Response) => {
-  const { id } = req.body;
-  const post = await getPostsById(id);
+  const { id } = req.params;
+  const post = await getPostsById(Number(id));
   res.status(200).json(post);
 });
 

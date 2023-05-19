@@ -1,5 +1,3 @@
-import { UrlWithStringQuery } from "url";
-
 export interface IPost {
     id?: number;
     title: string;
